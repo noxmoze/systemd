@@ -1,0 +1,11 @@
+[Unit]
+Description=servmc
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/sh /home/user/1.17/state.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+Alias=servmc.service
